@@ -1,0 +1,126 @@
+/* 2line */
+.tab-border-top-container {
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 1px;
+  width: 100% !important;
+  height: calc(100% - 3px) !important;
+  background-color: transparent !important;
+}
+.tab-border-top-container:before {
+  content: "";
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: spinner 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  background: conic-gradient(
+      from 0deg at 50% 51.35%,
+      rgba(185, 215, 243, 0) 0deg,
+      rgba(185, 215, 243, 0) 289.4deg,
+      #ffb86c 318.05deg,
+      #ff65f2 1turn
+    ),
+    conic-gradient(
+      from 180deg at 50% 51.35%,
+      rgba(185, 215, 243, 0) 0deg,
+      rgba(185, 215, 243, 0) 287.46deg,
+      #20e3b2 325.02deg,
+      #00aefd 1turn
+    );
+}
+@keyframes spinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(1turn);
+  }
+}
+
+/* 4corner */
+/* :root {
+  --size: 5px;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active.tab-border-top>.tab-border-top-container {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active.tab-border-top>.tab-border-top-container:before,
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active.tab-border-top>.tab-border-top-container:after {
+  content: "";
+  width: var(--size);
+  height: var(--size);
+  position: absolute;
+  border: 2px solid;
+  border-image-slice: 1;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active.tab-border-top>.tab-border-top-container:before {
+  top: 0;
+  left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-image-source: linear-gradient(-45deg, #4dd78a, #20e3b2);
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active.tab-border-top>.tab-border-top-container:after {
+  right: 0;
+  bottom: 0;
+  border-top: 0;
+  border-left: 0;
+  border-image-source: linear-gradient(-45deg, #6a5af9, #d66efd);
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active:before,
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active:after {
+  content: "";
+  width: var(--size);
+  height: var(--size);
+  position: absolute;
+  border: 2px solid;
+  border-image-slice: 1;
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active:before {
+  left: 0;
+  bottom: 0;
+  border-top: 0;
+  border-right: 0;
+  border-image-source: linear-gradient(-45deg, #fc6c8f, #ffb86c);
+}
+
+.monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab.active:after {
+  top: 0;
+  right: 0;
+  border-left: 0;
+  border-bottom: 0;
+  border-image-source: linear-gradient(-45deg, #098dff, #2cccff);
+} */
+
+/* thanh scorllbar */
+.cursors-layer .cursor {
+  background-image: linear-gradient(245deg,
+      #fcb564,
+      #ff65f2,
+      #d66efd) !important;
+}
+
+.editor-container .monaco-scrollable-element>.scrollbar.vertical>.slider {
+  background-image: linear-gradient(to top, #ffb86c, #ff6bcb);
+  width: 3px !important;
+}
+
+/* Edit font */
+.mtk5,
+.mtki {
+  font-family: "Operator mono";
+  font-style: italic;
+}
