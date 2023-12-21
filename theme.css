@@ -118,6 +118,11 @@
   width: 3px !important;
 }
 
+.editor-container .monaco-scrollable-element>.scrollbar.horizontal>.slider {
+  background-image: linear-gradient(to left, #ffb86c, #ff6bcb);
+  height: 3px !important;
+}
+
 /* Edit font */
 .mtk5,
 .mtki {
