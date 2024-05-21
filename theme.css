@@ -152,11 +152,11 @@
 }
 
 /* thanh list file */
-.monaco-list-rows, .monaco-scrollable-element {
+.monaco-scrollable-element, .monaco-list-rows {
   background-image: url('/D:/vscode/rain.gif') !important;
 }
 
-/* avatar */
+/* icon avatar */
 .codicon-accounts-view-bar-icon:before {
   content: '';
   width: 40px;
@@ -199,7 +199,21 @@
   }
 }
 
-/* hover file */
+/* icon setting */
+.codicon-settings-view-bar-icon:hover:before {
+  animation: rotating 2s linear infinite;
+}
+
+@keyframes rotating {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: -360deg;
+  }
+}
+
+/* hover anything */
 .hover-contents {
   background: linear-gradient(to right, rgba(64, 224, 208, 0.5), rgba(255, 140, 0, 0.5), rgba(255, 0, 128, 0.5));
   color: white
@@ -232,6 +246,53 @@
   100% {
       border-left-color: #FFD700;
   }
+}
+
+/* search bar */
+.monaco-toolbar .actions-container>.action-item.command-center-quick-pick {
+  gap: 0 5px;
+}
+
+/* hide item */
+.monaco-action-bar>.actions-container>li.action-item.menu-entry
+{
+  visibility: hidden;
+}
+
+.menubar-menu-button {
+  visibility: hidden !important;
+}
+
+.menubar-menu-button[aria-label="File"] {
+  visibility: visible !important;
+}
+
+/* replace text explorer */
+.title-label h2[custom-hover="true"][draggable="true"] {
+  display: none;
+}
+.composite.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.composite.title .title-label:before {
+  /* content: "NHL"; */
+  content: "Nguyễn Hoàng Lâm";
+  font-family: 'monospace';
+  font-size: large;
+}
+
+.composite.title .title-actions {
+  display: none;
+}
+
+/* Edit font */
+.mtk5,
+.mtki {
+  font-family: "Operator mono";
+  font-style: italic;
 }
 
 
@@ -268,10 +329,3 @@
     --a: 360deg;
   }
 } */
-
-/* Edit font */
-.mtk5,
-.mtki {
-  font-family: "Operator mono";
-  font-style: italic;
-}
