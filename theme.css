@@ -10,6 +10,7 @@
   height: calc(100% - 3px) !important;
   background-color: transparent !important;
 }
+
 .tab-border-top-container:before {
   content: "";
   width: 500px;
@@ -34,6 +35,7 @@
       #00aefd 1turn
     );
 }
+
 @keyframes spinner {
   100% {
     transform: translate(-50%, -50%) rotate(1turn);
@@ -129,9 +131,108 @@
 }
 
 .minimap.slider-mouseover .minimap-decorations-layer {    
-  background: linear-gradient(to bottom, #cf5c5c,#c19b4a,#def2a0,#c6ee4a,#42eca6,#64b3d9,#208ea2,#498ada,#5b73df,#897ed3,#cf5c5c,#c19b4a);
+  /* background: linear-gradient(to bottom, #cf5c5c,#c19b4a,#def2a0,#c6ee4a,#42eca6,#64b3d9,#208ea2,#498ada,#5b73df,#897ed3,#cf5c5c,#c19b4a); */
+  background: linear-gradient(150deg, #ff8787 0%, #ffd43b 30%, #63e6be 60%, #74c0fc 100%);
   opacity: .2;
 }
+
+/* thanh footer */
+.part.statusbar.status-border-top {
+  background: linear-gradient(to right, rgba(64, 224, 208, 0.5), rgba(255, 140, 0, 0.5), rgba(255, 0, 128, 0.5));
+}
+
+/* hinh nen */
+.windows {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.9;
+  background-image: url('/D:/vscode/backdes.png');
+}
+
+/* thanh list file */
+.monaco-list-rows, .monaco-scrollable-element {
+  background-image: url('/D:/vscode/rain.gif') !important;;
+}
+
+/* avatar */
+.codicon-accounts-view-bar-icon:before {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-image: url(/D:/vscode/avatar.png);
+  background-size: 100%;
+  position: absolute; /* Thêm position: absolute để hiệu ứng chỉ chạy quanh hình tròn */
+  top: 0;
+  left: 0;
+  border: 2px solid transparent;
+}
+
+.codicon-accounts-view-bar-icon:hover:before {
+  width: 37px;
+  height: 37px;
+  border: 3px solid transparent;
+  animation: borderAnimation 3s infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
+      border-color: #ff0000; /* Đỏ */
+  }
+  20% {
+      border-color: #ff7f00; /* Cam */
+  }
+  40% {
+      border-color: #ffff00; /* Vàng */
+  }
+  60% {
+      border-color: #00ff00; /* Xanh lá */
+  }
+  80% {
+      border-color: #0000ff; /* Xanh dương */
+  }
+  100% {
+      border-color: #ff00ff; /* Tím */
+  }
+}
+
+/* hover file */
+.hover-contents {
+  background: linear-gradient(to right, rgba(64, 224, 208, 0.5), rgba(255, 140, 0, 0.5), rgba(255, 0, 128, 0.5));
+  color: white
+}
+
+/* icon app */
+.window-appicon {
+  background-image: url('/D:/vscode/icon.png');
+}
+
+/* active item */
+.active-item-indicator::before {
+  animation: activeItem 3s infinite;
+}
+
+@keyframes activeItem {
+  0% {
+    border-left-color: #FAD961;
+  }
+  25% {
+    border-left-color: #F76B8A;
+  }
+  50% {
+    border-left-color: #70C1B3;
+  }
+  75% {
+    border-left-color: #9B90C2;
+  }
+  100% {
+    border-left-color: #FAD961;
+  }
+}
+
 
 /* .minimap.slider-mouseover .minimap-decorations-layer {
   animation: animateBg 10s linear infinite;
@@ -144,6 +245,27 @@
 @keyframes animateBg {
   0% { background-position: 0% 0%; }
   100% { background-position: 0% 100%; }
+} */
+
+/* .monaco-scrollable-element .tabs-container {
+  padding: 2.5px;
+  background: repeating-conic-gradient(from var(--a), #0f0, #ff0, #0ff, #f0f, #0ff);
+  animation: rotating 4s linear infinite;
+}
+
+@property --a {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes rotating {
+  0% {
+    --a: 0deg;
+  }
+  100% {
+    --a: 360deg;
+  }
 } */
 
 /* Edit font */
