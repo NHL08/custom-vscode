@@ -115,14 +115,25 @@
       #d66efd) !important;
 }
 
+/* thanh scorllbar len xuong */
 .editor-container .monaco-scrollable-element>.scrollbar.vertical>.slider {
   background-image: linear-gradient(to top, #ffb86c, #ff6bcb);
   width: 3px !important;
 }
 
+/* thanh scorllbar trai phai */
 .editor-container .monaco-scrollable-element>.scrollbar.horizontal>.slider {
   background-image: linear-gradient(to left, #ffb86c, #ff6bcb);
   height: 3px !important;
+  top: unset !important;
+  bottom: 0 !important;
+}
+
+.monaco-scrollable-element>.scrollbar>.slider {
+  background-image: linear-gradient(to top, #00aefd, #20e3b2) !important;
+  width: 3px !important;
+  left: unset !important;
+  right: 0 !important;
 }
 
 .separator-border .sash-container .monaco-sash.vertical {
@@ -278,7 +289,8 @@
 }
 
 .composite.title .title-label:before {
-  /* content: "NHL"; */
+  /* content: "N
+  HL"; */
   content: "Nguyễn Hoàng Lâm";
   font-family: 'monospace';
   font-size: large;
@@ -286,6 +298,39 @@
 
 .composite.title .title-actions {
   display: none;
+}
+
+/* header */
+.tabs-container {
+  cursor: default;
+  background-image: url(/D:/vscode/chocolatechip.gif), url(/D:/vscode/oreo.gif), url(/D:/vscode/oreo.gif), url(/D:/vscode/redvelvet.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: corgis 95s linear infinite;
+}
+
+@keyframes corgis {
+  0% {
+    background-position: 120%, -20%, -20%, 120%;
+  }
+  25% {
+    background-position: -20%, -20%, -20%, 120%;
+  }
+  30% {
+    background-position: -20%, -20%, -20%, 120%;
+  }
+  55% {
+    background-position: -20%, 120%, -20%, 120%;
+  }
+  65% {
+    background-position: -20%, 120%, -20%, 120%;
+  }
+  95% {
+    background-position: -20%, 120%, 120%, -20%;
+  }
+  100% {
+    background-position: -20%, 120%, 120%, -20%;
+  }
 }
 
 /* Edit font */
