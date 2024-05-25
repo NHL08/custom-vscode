@@ -163,9 +163,9 @@
 }
 
 /* thanh list file */
-.monaco-scrollable-element, .monaco-list-rows {
+/* .monaco-scrollable-element, .monaco-list-rows {
   background-image: url('/D:/vscode/rain.gif') !important;
-}
+} */
 
 /* icon avatar */
 .codicon-accounts-view-bar-icon:before {
@@ -289,8 +289,7 @@
 }
 
 .composite.title .title-label:before {
-  /* content: "N
-  HL"; */
+  /* content: "NHL"; */
   content: "Nguyễn Hoàng Lâm";
   font-family: 'monospace';
   font-size: large;
