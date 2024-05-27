@@ -292,7 +292,11 @@
   /* content: "NHL"; */
   content: "Nguyễn Hoàng Lâm";
   font-family: 'monospace';
-  font-size: large;
+  font-size: x-large;
+  background: linear-gradient(135deg, #ff8787 0%, #ffd43b 30%, #63e6be 60%, #74c0fc 100%);
+  color: transparent;
+  background-clip: text;
+  font-weight: bold;
 }
 
 .composite.title .title-actions {
