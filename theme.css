@@ -243,19 +243,19 @@
 
 @keyframes activeItem {
   0% {
-      border-left-color: #FFD700;
+    border-left-color: #ff8787;
   }
   25% {
-      border-left-color: #FFC0CB;
+    border-left-color: #ffd43b;
   }
   50% {
-      border-left-color: #87CEEB;
+    border-left-color: #63e6be;
   }
   75% {
-      border-left-color: #9370DB;
+    border-left-color: #74c0fc;
   }
   100% {
-      border-left-color: #FFD700;
+    border-left-color: #ff8787;
   }
 }
 
