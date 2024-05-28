@@ -129,7 +129,7 @@
   bottom: 0 !important;
 }
 
-.monaco-scrollable-element>.scrollbar>.slider {
+.monaco-list>.monaco-scrollable-element>.scrollbar>.slider {
   background-image: linear-gradient(to top, #00aefd, #20e3b2) !important;
   width: 3px !important;
   left: unset !important;
@@ -191,22 +191,22 @@
 
 @keyframes borderAnimation {
   0% {
-      border-color: #ff0000;
+    border-color: #ff0000;
   }
   20% {
-      border-color: #ff7f00;
+    border-color: #ff7f00;
   }
   40% {
-      border-color: #ffff00;
+    border-color: #ffff00;
   }
   60% {
-      border-color: #00ff00;
+    border-color: #00ff00;
   }
   80% {
-      border-color: #0000ff;
+    border-color: #0000ff;
   }
   100% {
-      border-color: #ff00ff;
+    border-color: #ff00ff;
   }
 }
 
