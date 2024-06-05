@@ -278,6 +278,10 @@
   visibility: visible !important;
 }
 
+.editor-actions .monaco-toolbar .monaco-action-bar {
+    display: none;
+}
+
 /* replace text explorer */
 .title-label h2[custom-hover="true"][draggable="true"] {
   display: none;
