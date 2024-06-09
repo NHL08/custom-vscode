@@ -243,19 +243,19 @@
 
 @keyframes activeItem {
   0% {
-    border-left-color: #ff8787;
+    border-left-color: #03a9f4;
   }
   25% {
-    border-left-color: #ffd43b;
+    border-left-color: #f441a5;
   }
   50% {
-    border-left-color: #63e6be;
+    border-left-color: #ffeb3b;
   }
   75% {
-    border-left-color: #74c0fc;
+    border-left-color: #03a9f4;
   }
   100% {
-    border-left-color: #ff8787;
+    border-left-color: #03a9f4;
   }
 }
 
@@ -297,7 +297,8 @@
   content: "Nguyễn Hoàng Lâm";
   font-family: 'monospace';
   font-size: x-large;
-  background: linear-gradient(135deg, #ff8787 0%, #ffd43b 30%, #63e6be 60%, #74c0fc 100%);
+  /* background: linear-gradient(135deg, #ff8787 0%, #ffd43b 30%, #63e6be 60%, #74c0fc 100%); */
+  background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
   color: transparent;
   background-clip: text;
   font-weight: bold;
