@@ -265,10 +265,10 @@
 }
 
 /* hide item */
-.monaco-action-bar>.actions-container>li.action-item.menu-entry
+/* .monaco-action-bar>.actions-container>li.action-item.menu-entry
 {
   visibility: hidden;
-}
+} */
 
 .menubar-menu-button {
   visibility: hidden !important;
@@ -278,9 +278,9 @@
   visibility: visible !important;
 }
 
-.editor-actions .monaco-toolbar .monaco-action-bar {
+/* .editor-actions .monaco-toolbar .monaco-action-bar {
     display: none;
-}
+} */
 
 /* replace text explorer */
 .title-label h2[custom-hover="true"][draggable="true"] {
@@ -293,11 +293,11 @@
 }
 
 .composite.title .title-label:before {
-  /* content: "NHL"; */
+  content: "NHL";
   content: "Nguyễn Hoàng Lâm";
   font-family: 'monospace';
   font-size: x-large;
-  /* background: linear-gradient(135deg, #ff8787 0%, #ffd43b 30%, #63e6be 60%, #74c0fc 100%); */
+  background: linear-gradient(135deg, #ff8787 0%, #ffd43b 30%, #63e6be 60%, #74c0fc 100%);
   background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
   color: transparent;
   background-clip: text;
